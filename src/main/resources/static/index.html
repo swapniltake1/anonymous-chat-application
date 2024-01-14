@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Chat App</title>
+
+    <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/script.js"></script>
+</head>
+<body class="bg-dark text-white">
+    <div id="name-form" class="login d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="heading text-center mb-5 mt-0">
+                    <h2 > Welcome to Anonymous Chat Application</h2>
+                     <p>please do not use your original name and other informations </p>
+                </div>
+                <div class="col-md-4 offset-md-4">
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your nickname to chat!!" id="name-value" autofocus  class="form-control" required >
+                        <div class="input-group">
+                            <button class="btn btn-dark" id="login">login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="chatroom" class="d-none">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                     <div class="card mt-3">
+                        <div class="card-header">
+                            <h3 id="name-title"> </h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive mt-3">
+                                <table id="message-container-tbl">
+
+                                </table>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="type here " id="message-value" autofocus  class="form-control" required>
+                                <div class="input-group-append">
+                                    <button class="btn btn-dark" id="send">Send</button>
+                                    <button class="btn btn-dark" id="logout"> LogOut</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

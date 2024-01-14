@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#name-form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name-title {
+    color: white;
+}
+
+#send {
+    background: green;
+}
+
+#logout {
+    background: red;
+}
+
+#message-container-tbl {
+    border: none;
+}
+
+.card-header {
+    background: rgb(39, 38, 38);
+}
+
+.card-body {
+    background: rgb(39, 38, 38);
+}
+
+.card {
+    border: none;
+}
+
+.login {
+    background-image: linear-gradient(to top, #d16ba5, #ee7387, #f78969, #eba654, #cfc456, #b8d468, #9de282, #7eeea3, #70f2b8, #64f6cd, #5ef9e0, #5ffbf1);
+}
+
+#login {
+    background: #cd08eb;
+    margin-top: 15px;
+    margin-left: 45%;
+    border: none;
+    border-radius: 10px;
+}
+
+#name-value{
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+    #login {
+        margin-left: 40%;
+    }
+}
